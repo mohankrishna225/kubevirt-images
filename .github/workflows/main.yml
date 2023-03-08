@@ -34,7 +34,7 @@ jobs:
         DOCKER_CONFIG: ${{secrets.DOCKER_CONFIG}} 
 
     - name: push #FIXME : no push if branch
-      run: docker push mohankrishna/${{ matrix.name }}
+      run: docker push mohankrishna225/${{ matrix.name }}
 
     #- name: tag and push to dockerhub
     #  run: docker tag ${{ matrix.name }} mohankrishna225/${{ matrix.name }} && docker push mohankrishna225/${{ matrix.name }}
